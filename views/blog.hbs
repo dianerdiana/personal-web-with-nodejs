@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Creating Blog Page</title>
+        <link rel="stylesheet" href="public/stylesheet/blog.css">
+        {{!-- <script src="../script/blog.js"></script> --}}
+    </head>
+    <body>
+        
+        <!-- NavBar-->
+        <nav>
+            <div class="nav-left">
+                <a href="/home" class="logo-brand">
+                    D
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="/home" class="nav-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="/blog" class="nav-item" style="color: #414141; font-weight: bold;">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+						{{#if isLogin}}
+						<ul class="grop-btn-acount">
+								<li>
+									<a href="#" class="nav-item" style="color: #414141;">Hello, {{user.name}}</a>
+								</li>
+								<li>
+									<a href="/logout" class="nav-item" style="color: #414141;">Logout</a>
+								</li>
+							</ul>
+							<a href="/contact-me" class="btn-contact">Contact Me</a>
+						{{else}}
+							<ul class="grop-btn-auth">
+								<li>
+									<a href="/register" class="nav-item" style="color: #414141;">Register</a>
+								</li>
+								<li>
+									<a href="/login" class="nav-item" style="color: #414141;">Login</a>
+								</li>
+							</ul>
+              <a href="/contact-me" class="btn-contact">Contact Me</a>
+						{{/if}}
+            </div>
+        </nav>
+
+				{{#if messages.success}}
+				<div class="alert">
+					<span class="alert-text">{{messages.success}}</span>
+				</div>
+				{{/if}}
+
+        <!-- Blog -->
+
+        <div class="blog-container">
+					
+            <div class="blog-section">
+
+                <!-- dynamic content would be here -->
+								<!-- Add button "add blog" -->
+											
+							<div class="contents">
+								<div style="text-align: right; margin-top: 10px; margin-bottom: 20px;">
+									{{#if isLogin}}
+										<a href="/add-blog" class="btn-add-new-blog">Add New Blog</a>
+									{{/if}}
+								</div>
+								{{#each blogs}}
+									<div class="blog-list-item">
+											<div class="blog-image">
+												<img src="{{this.image}}" alt="" />
+											</div>
+											<div class="blog-content">
+												{{#if this.isLogin}}
+
+													<div class="btn-group">
+														<a href="/edit-blog/{{this.id}}" class="btn-edit">Edit Post</a>
+														<a href="/delete-blog/{{this.id}}" class="btn-delete">Delete Blog</a>
+													</div>
+
+												{{/if}}
+												<h2>
+													<a href="/blog-detail/{{this.id}}" target="_blank"
+														>{{this.title}}</a
+													>
+												</h2>
+												<div class="detail-blog-content">
+													{{this.post_at}} | {{this.author}}
+												</div>
+												<p>
+													{{this.content}}
+												</p>
+												<div class="distance-time">
+													{{this.post_age}}
+												</div>
+											</div>
+									</div>
+								{{/each}}
+							</div>
+            </div>
+        </div>
+
+    </body>
+</html>

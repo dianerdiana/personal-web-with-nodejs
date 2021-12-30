@@ -1,0 +1,117 @@
+@font-face {
+    font-family: noto-sans;
+    src: url(../font/NotoSansTC-Regular.otf);
+}
+
+@font-face {
+    font-family: nunito;
+    src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+
+.bg-orange {
+    background-color: orangered;
+}
+
+.text-orange {
+    color: orangered !important;
+}
+
+.navbar {
+    height: 9vh;
+    background-color: #e6e7ee !important;
+}
+
+.container-fluid {
+    height: 91vh;
+}
+
+.container-form {
+    width: 400px;
+}
+
+.ff-noto-sans {
+    font-family: noto-sans;
+}
+
+.ff-nunito {
+    font-family: nunito;
+}
+
+.shadow-neum {
+    color: #414141 !important;
+    border: solid 1px #d1d1d1;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+}
+
+.rounded-8 {
+    border-radius: 8px;
+}
+
+.box-brand {
+    padding: 2px 13px 3px 13px;
+}
+
+.bg-neum {
+    background-color: #e6e7ee !important;
+}
+
+.text-neum {
+    color: #414141 !important;
+}
+
+/*Blog Form Style*/
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    background: #e6e7ee;
+    box-shadow:  5px 5px 8px #bebebe,
+             -5px -5px 8px #ffffff;
+}
+
+.g-width {
+    width: 100%;
+}
+
+.input-neum {
+    font-family: noto-sans;
+    letter-spacing: 0.6px;
+    color: #414141;
+    padding: 8.5px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    background: #e6e7ee;
+    box-shadow: inset  3px 3px 4px #bebebe,
+             inset -3px -3px 4px #ffffff;
+}
+
+.input-neum:focus {
+    outline: none;
+    border: 1px solid #d1d1d1;
+}
+
+.btn-post-blog {
+    font-family: noto-sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: #414141;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #e6e7ee;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    box-shadow:  3px 3px 4px #bebebe,
+             -3px -3px 4px #ffffff;
+}
+
+.btn-post-blog:hover {
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    box-shadow: inset  3px 3px 4px #bebebe,
+              inset -3px -3px 4px #ffffff;
+}

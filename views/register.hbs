@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Introduction</title>
+
+    
+
+    <link rel="stylesheet" href="public/stylesheet/register.css">
+</head>
+<body>
+    
+  <nav>
+        <div class="nav-left">
+            <a href="/home" class="logo-brand">
+                D
+            </a>
+
+            <ul>
+                <li>
+                    <a href="/home" class="nav-item" style="color: #414141; ">Home</a>
+                </li>
+                <li>
+                    <a href="/blog" class="nav-item">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+          <ul class="grop-btn-auth">
+            <li>
+                <a href="/register" class="nav-item" style="color: #414141; font-weight: bold;">Register</a>
+            </li>
+            <li>
+                <a href="/login" class="nav-item" style="color: #414141;">Login</a>
+            </li>
+          </ul>
+          <a href="/contact-me" class="btn-contact">Contact Me</a>
+        </div>
+  </nav>
+
+<div class="form-container">
+        
+      <div class="section">
+      <form method="post" action="/register">
+
+          <div>
+              <h2 class="form-title">Create account</h2>
+          </div>
+
+          <span class="label">Your Name</span>
+          <div class="input-group">
+            
+              <label for="input-name" class="input-name"><img src="public/icons/profile.png" alt="name"></label>
+              <input name="name" type="text" id="input-name" placeholder="Your Name">
+          </div>
+
+          <span class="label">Your Email</span>
+          <div class="input-group">
+            
+              <label for="input-email" class="input-name"><img src="public/icons/mail-login.svg" alt="name"></label>
+              <input name="email" type="email" id="input-email" placeholder="Your Email">
+          </div>
+
+          <span class="label">Your Password</span>
+          <div class="input-group">
+              <label for="input-password" class="input-name"><img src="public/icons/lock.svg" alt="name"></label>
+              <input name="password" type="password" id="input-password" placeholder="Password">
+          </div>
+
+          <button>Register</button>
+
+
+      </form>
+      <div class="to-login">
+        <p>Already have account? <a href="/login" target="_blank" rel="noopener noreferrer">Sign in</a></p>
+      </div>
+      </div>
+
+    </div>
+
+</body>
+</html>

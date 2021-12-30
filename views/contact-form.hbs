@@ -1,0 +1,78 @@
+<!DOCTYPE>
+<head>
+    <title>Personal Web - Contact Form</title>
+
+    <link rel="stylesheet" href="public/stylesheet/style.css">
+
+    <script src="../script/index.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="/home" class="logo-brand">
+                D
+            </a>
+
+            <ul>
+                <li>
+                    <a href="/home" class="nav-item">Home</a>
+                </li>
+                <li>
+                    <a href="/blog" class="nav-item">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="/contact-me" class="btn-contact" style="color: #414141; font-weight: bold;">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="form-container">
+        
+        <div class="section">
+        <form>
+
+            <div>
+                <h2 class="form-title">Who are you?</h2>
+            </div>
+
+            <div class="input-group">
+                <label for="input-name" class="input-name"><img src="public/icons/profile.png" alt="name"></label>
+                <input type="text" id="input-name" placeholder="Your Name">
+            </div>
+
+            <div class="input-group">
+                <label for="input-email" class="input-email"><img src="public/icons/at.svg" alt="email"></label>
+                <input type="email" id="input-email" placeholder="Email Address">
+            </div>
+
+            <div class="input-group">
+                <label for="input-phone" class="input-phone"><img src="public/icons/phone.svg" alt="phone"></label>
+                <input type="text" id="input-phone" placeholder="Phone Number">
+            </div>
+
+            <div class="input-group">
+                <label for="input-subject"><img src="public/icons/book.svg" alt=""></label>
+                <select name="input-subject" id="input-subject">
+                    <option selected disabled>Choose Subject</option>
+                    <option value="I am hiring">I am hiring</option>
+                    <option value="Let's collab">Let's collab</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="input-message" class="input-message"><img src="public/icons/message.svg" alt="message"></label>
+                <textarea name="input-message" id="input-message" rows="5px" placeholder="Input your message here..."></textarea>
+            </div>
+
+            <button type="button" onclick="getData()">SEND</button>
+
+        </form>
+        </div>
+
+    </div>
+
+</body>
+<>

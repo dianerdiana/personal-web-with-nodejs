@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<head>
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="public/stylesheet/style.css">
+
+    <script src="script/index.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="/home" class="logo-brand">
+                D
+            </a>
+
+            <ul>
+                <li>
+                    <a href="/home" class="nav-item" style="color: #414141; font-weight: bold;">Home</a>
+                </li>
+                <li>
+                    <a href="/blog" class="nav-item">Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="/contact-me" class="btn-contact">Contact Me</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="section">
+
+          <div class="sec-left">
+              <div class="card">
+                  <div class="profile-img-wrap">
+                      <img src="public/images/profile.jpg" alt="profile-img" class="profile-img">
+                  </div>
+                  <h2 class="profile-name">Dian Erdiana</h2>
+                  <p class="profile-desc">
+                      I want to make an application that will be useful for many people in the future.
+                  </p>
+                  <table border="1">
+                      <tr>
+                          <th>Experience</th>
+                          <th>Year</th>
+                      </tr>
+                      {{#each table}}
+                      <tr>
+                          <td class="data-experience">{{this.experience}}</td>
+                          <td class="data-year">{{this.year}}</td>
+                      </tr>
+                      {{/each}}
+                  </table>
+              </div>
+          </div>
+
+          <div class="sec-right">
+              <div class="group-summary">
+                  <h2 class="summary-title">What I Do?</h2>
+                  <p class="summary-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, illo? Doloribus iste, ad natus inventore ex sapiente officia ipsam eligendi similique. Nobis debitis dolor vel soluta quod delectus esse magnam adipisci ab ea laboriosam modi fugit numquam quaerat perspiciatis et quasi..</p>
+              </div>
+  
+              <div class="group-ability">
+                  <div class="ability-js">
+                      <div class="js-img-wrapper">
+                          <img src="public/icons/javascript.svg" alt="javascript-icon">
+                      </div>
+                      <h4 class="ability-title">Frontend Developer</h4>
+                      <p class="ability-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, alias.</p>
+                  </div>
+                  <div class="ability-git">
+                      <div class="git-img-wrapper">
+                          <img src="public/icons/github.svg" alt="git-icon" id="git-icon">
+                      </div>
+                      <h4 class="ability-title">Version Control</h4>
+                      <p class="ability-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, dolor?</p>
+                  </div>
+                  <div class="ability-netlify">
+                      <div class="netlify-img-wrapper">
+                          <img src="public/icons/netlify.svg" alt="netlify-icon">
+                      </div>
+                      <h4 class="ability-title">Automated Deployment</h4>
+                      <p class="ability-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, sint!</p>
+                  </div>
+  
+              </div>
+  
+              <div class="group-sosmed">
+                  <h2 class="sosmed-title">Found Me On</h2>
+                  <div class="group-icon">
+                      <a href="https://facebook.com" class="icon-wrap icon-facebook" target="_blank">
+                          <img src="public/icons/facebook.svg" alt="facebook">
+                      </a>
+                      <a href="https://twitter.com" class="icon-wrap" target="_blank">
+                          <img src="public/icons/twitter.svg" alt="twitter">
+                      </a>
+                      <a href="https://instagram.com" class="icon-wrap" target="_blank">
+                          <img src="public/icons/instagram.svg" alt="instagram">
+                      </a>
+                      <a href="https://gmail.com" class="icon-wrap" target="_blank">
+                          <img src="public/icons/mail.svg" alt="email">
+                      </a>
+                      <a href="https://whatsapp.com" class="icon-wrap" target="_blank">
+                          <img src="public/icons/whatsapp.svg" alt="whatsapp">
+                      </a>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+    </div>
+    
+</body>
+<>
