@@ -44,7 +44,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(
     session({
         cookie: {
-            maxAge: 2*60*60*1000,
+            maxAge: 2 * 60 * 60 * 1000,
             secure: false,
             httpOnly: true
         },
@@ -216,22 +216,6 @@ app.post('/blog', upload.single('image'),function(req,res){
           if(err) throw err
 
           res.redirect('/blog')
-      })
-  })
-})
-
-app.post('/register', function(req, res){
-  const data = req.body
-  
-  const hashedPassword = bcrypt.hashSync(data.password, 10)
-  let query = `INSERT INTO tb_user (name, email, password) VALUES ('${data.name}', '${data.email}', '${hashedPassword}')`
-
-  db.connect(function(err, client){
-      if (err) throw err
-      client.query(query, function(err, result){
-          if (err) throw err
-
-          res.redirect('/login')
       })
   })
 })
